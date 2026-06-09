@@ -173,20 +173,20 @@ const DESTS = [
       {type:"flight",   name:"Paris Orly → Lisbon",        detail:"30 Jun · depart ~12:30 · arrive LIS ~15:00", cost:0, status:"todo"},
     ]},
 
-  { id:"lisbon", city:"Lisbon", country:"Portugal", emoji:"🇵🇹", dates:"30 Jun – 2 Jul", total:562, paid:347,
+  { id:"lisbon", city:"Lisbon", country:"Portugal", emoji:"🇵🇹", dates:"30 Jun – 2 Jul", total:562, paid:392,
     items:[
       {type:"stay",  name:"Lisbon Chillout Hostel", detail:"30 Jun – 2 Jul",  split:237.50, cost:475, status:"booked"},
       {type:"flight",name:"Lisbon → Palma",         detail:"VY3437 · 2 Jul 21:35–00:30",  cost:189, status:"booked"},
-      {type:"flight",name:"Checked Bag · Lisbon→Palma",detail:"1 person · Vueling",       cost:45,  status:"todo"},
+      {type:"flight",name:"Checked Bag · Lisbon→Palma",detail:"1 person · Vueling",       cost:45,  status:"booked"},
       {type:"food",  name:"Food Budget",            detail:"2.5 days",                     cost:125, status:"spend"},
       {type:"fun",   name:"Drinks + Smokes",        detail:"2.5 days",                     cost:125, status:"spend"},
       {type:"transport",name:"Taxis",                                                       cost:50,  status:"spend"},
     ]},
-  { id:"palma", city:"Palma", country:"Spain", emoji:"🇪🇸", dates:"3–5 Jul", total:545, paid:260,
+  { id:"palma", city:"Palma", country:"Spain", emoji:"🇪🇸", dates:"3–5 Jul", total:545, paid:295,
     items:[
       {type:"stay",     name:"Hotel",             split:278.50, cost:557, status:"booked"},
       {type:"flight",   name:"Palma → Barcelona", detail:"FR1343 · 5 Jul 07:30–08:25", cost:75, status:"booked"},
-      {type:"flight",   name:"Checked Bag · Palma→Barcelona",detail:"1 person · Ryanair", cost:35, status:"todo"},
+      {type:"flight",   name:"Checked Bag · Palma→Barcelona",detail:"1 person · Ryanair", cost:35, status:"booked"},
       {type:"transport",name:"Rent a Car",         cost:50,  status:"spend"},
       {type:"food",     name:"Food Budget",        detail:"2 days", cost:100, status:"spend"},
       {type:"fun",      name:"Drinks + Smokes",    detail:"2 days", cost:100, status:"spend"},
@@ -324,8 +324,6 @@ const DESTS = [
 ];
 
 const NEEDS_PLAN=[
-  {dest:"✈️ Flights",  destId:"lisbon",    text:"🧳 Add checked bag · Lisbon→Palma (Vueling, ~$45)"},
-  {dest:"✈️ Flights",  destId:"palma",     text:"🧳 Add checked bag · Palma→Barcelona (Ryanair, ~$35)"},
   {dest:"✈️ Flights",  destId:"amsterdam", text:"🧳 Add checked bag · Barcelona→AMS + AMS→Prague (2 flights, ~$90)"},
   {dest:"✈️ Flights",  destId:"berlin",    text:"🧳 Add checked bag · Berlin→Rome (Ryanair, ~$50)"},
   {dest:"✈️ Flights",  destId:"amalfi",    text:"🧳 Add checked bag · Naples→Zakynthos (EasyJet, ~$50)"},
